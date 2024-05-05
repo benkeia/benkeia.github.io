@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/carte.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bobby's diner</title>
-    <link href="styles/style.css" rel="stylesheet" >
+    <title>Où sommes-nous ?</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-    <script src="scripts/script.js"></script>
-    
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+ <script src="scripts/script.js"></script>
+ 
 
     
 </head>
-<body>
+<body onload="init()">
     <header>
         <h1> <a onclick="scrollToTop()">Bobby's Diner</a></h1>
         <ul>
@@ -24,25 +31,28 @@
         
         <div id="anim"></div>
     </header>
-
     
-    </div>
-
-    <div id="droite">
-        <img src="images/pub.png" alt="publicité pour un burger : Le retour du double jukebox burger" id="affiche">
-    </div>
-    <div id="camion">
-        <img src="images/food-truck.jpg" alt="Une photo du food truck" class="photocamion" >
-        <p class="desc">Vous souhaitez rendre votre événement unique ? Nous proposons des services uniques qui s'adaptent à vos besoins.</p>
-         <button onclick="contact()" type="button" class="cta">Contactez-nous</button>
-    </div>
-    <div id="menu">
-        <img src="images/menu.jpg" alt="Une photo du de notre menu phare" class="photocamion" >
-        <p class="desc">Chez Bobby's diner (re)découvrez l'Amérique avec nos menus 100% authentique !</p>
-        <button onclick="menu()" type="button" class="cta">Nos menus</button>
+    
+    <div class="map-container"> 
         
-    </div>
+        
+        
+        
+        <h2>Horaires :</h2>
+
+        <ul id="horaires">
+            <li>Lundi : 11h00 - 14h00 et 18h00 - 22h00</li>
+            <li>Mardi : 11h00 - 14h00 et 18h00 - 22h00</li>
+            <li>Mercredi : 11h00 - 14h00</li>
+            <li>Jeudi : Fermé</li>
+            <li>Vendredi : 11h00 - 14h00 et 18h00 - 22h00</li>
+            <li>Samedi : 12h00 - 16h00</li>
+            <li>Dimanche : Fermé</li>
+        </ul>
+        
+        <div id ='map' style="width: 650px; height: 480px;" ></div>
     
+    </div>
 
     <footer>
         <div class="footersection">
@@ -77,6 +87,11 @@
         
     
     </footer>
+
+    
+
+     
+    
 
 
     

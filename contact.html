@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bobby's diner</title>
+    <title>Contactez-nous</title>
     <link href="styles/style.css" rel="stylesheet" >
+    <link href="styles/contact.css" rel="stylesheet" >
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
     <script src="scripts/script.js"></script>
     
@@ -26,23 +27,45 @@
     </header>
 
     
-    </div>
-
-    <div id="droite">
-        <img src="images/pub.png" alt="publicité pour un burger : Le retour du double jukebox burger" id="affiche">
-    </div>
-    <div id="camion">
-        <img src="images/food-truck.jpg" alt="Une photo du food truck" class="photocamion" >
-        <p class="desc">Vous souhaitez rendre votre événement unique ? Nous proposons des services uniques qui s'adaptent à vos besoins.</p>
-         <button onclick="contact()" type="button" class="cta">Contactez-nous</button>
-    </div>
-    <div id="menu">
-        <img src="images/menu.jpg" alt="Une photo du de notre menu phare" class="photocamion" >
-        <p class="desc">Chez Bobby's diner (re)découvrez l'Amérique avec nos menus 100% authentique !</p>
-        <button onclick="menu()" type="button" class="cta">Nos menus</button>
-        
-    </div>
+<p class="paragraphe">Bobby's Diner se déplace avec plaisir pour rendre votre mariage, festival, événement sportif ou toute autre occasion mémorable et unique. Imaginez-vous déguster nos délicieux burgers, hot-dogs et milkshakes dans le cadre de votre événement préféré ! Pour discuter des détails et planifier ensemble un moment inoubliable, n'hésitez pas à nous contacter.</p>
     
+
+
+
+<div class="contact"> 
+    
+    
+    <form>
+        <h3>Contactez-nous</h3>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"  ></textarea>
+
+        <button type="button">Envoyer</button>
+    </form>
+    <div class="contact-info">
+        <h3>Coordonnées</h3>
+        <p>Email: Bobbysdiner@gmail.com</p>
+        <p>Téléphone: 0269661721</p>
+        <h3>Suivez-nous</h3>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.facebook.com/"><img src="images/icones/facebook.png" alt="Lien vers notre page facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="images/icones/instagram.png" alt="Lien vers notre page instagram"></a>
+            <a target="_blank" href="https://twitter.com/"><img src="images/icones/twitter.png" alt="Lien vers notre page twitter"></a>
+            <a target="_blank" href="https://www.youtube.com/"><img src="images/icones/youtube.png" alt="Lien vers notre page youtube"></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
     <footer>
         <div class="footersection">
@@ -67,7 +90,7 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">Notre histoire</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Contact</a></li>
                 <li><a href="menu.html">Nos produits</a></li>
                 
             </ul>

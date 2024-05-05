@@ -1,0 +1,113 @@
+
+
+html body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(116, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+
+.card {
+
+    
+    width: 300px;
+    height: 390px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: #f4e4d9;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: -60px;
+    
+    
+}
+
+#card-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    height: auto;
+    overflow-y: hidden; /* Hide vertical overflow */
+    height: 440px;
+}
+
+.card img{
+position: relative;
+transform: translate(-50%);
+left: 50%;
+width: 80%;
+margin-top: -30px;
+margin-bottom: -20px;
+
+
+    
+}
+
+.card h2{
+    
+    width: 100%;
+    text-align: center;
+    
+}
+
+.card p:not(.prix) {
+    
+
+    width: 100%;
+    text-align:center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    white-space: normal; /* Allow text to wrap */
+    height: 100px;
+    
+}
+
+.prix {
+    position: relative;
+    left: 15px;
+    top: -340px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-family: 'Magic';
+    color: #e30913;
+}
+
+  
+h2{
+    padding: 0;
+    margin: 0px;
+}
+
+.titre-menu{
+    margin: 180px 30px 30px 30px;
+    font-size: 50px;
+    color: white;
+    font-family: "Magic";
+}
+
+#milkshakes{
+    margin-top: -150px;
+}
+
+#milkshakes img{
+    margin-top: 0px;
+}
+
+
+#milkshakes div{
+    height: 350px;
+}
+
+#milkshakes .prix{
+    top: -370px;
+}
+
+
+footer{
+    margin-top: 60px;
+}
