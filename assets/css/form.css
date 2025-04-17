@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+@import url('../../node_modules/@radix-ui/colors/violet.css');
+@import url('../../node_modules/@radix-ui/colors/violet-dark.css');
+@import url('../../node_modules/@radix-ui/colors/gray.css');
+@import url('../../node_modules/@radix-ui/colors/gray-dark.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', sans-serif;
+    color: var(--gray-12);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--violet-3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--violet-11);
+    height: 100px;
+    padding: 10px 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--violet-1);
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after {
+    transform: translateY(4px);
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: var(--violet-1);
+    transition: width .3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--violet-12);
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    background: var(--violet-4);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 7px 32px -9px var(--gray-12);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: var(--violet-11);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 2px solid var(--violet-7);
+    border-radius: 10px;
+    background: var(--violet-1);
+    font-size: 16px;
+    color: var(--gray-12);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--violet-9);
+}
+
+button {
+    padding: 15px 30px;
+    background: var(--violet-11);
+    color: var(--violet-1);
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--violet-9);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+textarea { resize: vertical; }
