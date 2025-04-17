@@ -1,38 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
 
-@import url('../../node_modules/@radix-ui/colors/violet.css');
-@import url('../../node_modules/@radix-ui/colors/violet-dark.css');
-@import url('../../node_modules/@radix-ui/colors/gray.css');
-@import url('../../node_modules/@radix-ui/colors/gray-dark.css');
-
-
+/* Définition des variables de couleur pour remplacer Radix UI */
+:root {
+  --violet-1: #fdfcfe;
+  --violet-3: #f5f2ff;
+  --violet-4: #ede9fe;
+  --violet-7: #8b5cf6;
+  --violet-8: #7c3aed;
+  --violet-9: #6d28d9;
+  --violet-11: #5b21b6;
+  --violet-12: #4c1d95;
+  
+  --gray-11: #383838;
+  --gray-12: #212121;
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Unbounded', sans-serif;
-color: var(--gray-12);
+    color: var(--gray-12);
 }
 
 body {
-
-
     display: flex;
     flex-direction: column;
-
-
     background: var(--violet-3);
-
 }
 
 main{
     overflow: hidden;
 }
-
-
-
-
 
 h1 {
     font-size: 35px;
@@ -67,16 +66,13 @@ svg.squiggle {
     left: 0;
     width: 100vw;
     height: auto;
-
     z-index: -1;
     overflow: hidden;
-
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
     background: var(--violet-11);
     height: 100px;
@@ -104,10 +100,6 @@ nav ul li a div {
     color: var(--violet-1);
 }
 
-
-
-
-
 nav ul li a {
     cursor: pointer;
     position: relative;
@@ -133,17 +125,12 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     align-items: center;
-
     margin-top: 100px ;
     margin-bottom: 50px ;
     padding: 0 20px;
     gap: 80px;
-
 }
-
-
 
 @media (max-width: 768px) {
     h1 {
@@ -161,7 +148,6 @@ nav ul li a:hover::after {
 }
 
 .variable {
-
     font-size: 35px;
     font-weight: 400;
 }
@@ -169,7 +155,6 @@ nav ul li a:hover::after {
 #typewriter,
 #cursor {
     font-size: 35px;
-
 }
 
 .soft-container {
@@ -185,13 +170,9 @@ nav ul li a:hover::after {
     background-color: var(--violet-4);
     padding: 40px;
     width: 28vw;
-
     border-radius: 20px;
-
     -webkit-box-shadow: 1px 7px 32px -9px var(--gray-12);
     box-shadow: 1px 7px 32px -9px var(--gray-12);
-
-
 }
 
 .soft {
@@ -204,10 +185,6 @@ nav ul li a:hover::after {
 .soft-icon {
     width: 40px;
 }
-
-
-
-
 
 #bloc2 {
     display: flex;
@@ -223,7 +200,6 @@ nav ul li a:hover::after {
 }
 
 .variable {
-
     font-variation-settings: 'wght' 300;
     cursor: default;
 }
@@ -234,13 +210,9 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
-
     width: 40vw;
-
     box-sizing: border-box;
 }
-
-
 
 nav img {
     width: 50px;
@@ -250,7 +222,6 @@ nav img {
 h2 {
     font-size: 30px;
     font-weight: 400;
-
     margin: 100px 70px;
 }
 
@@ -278,18 +249,14 @@ h2 {
     font-size: 20px;
     font-weight: 800;
     color : var(--violet-11);
-    
-    
 }
 
 .project img {
     width: 28vw;
-
     object-fit: cover;
     border-radius: 20px;
     aspect-ratio: 16/11;
 }
-
 
 .project p {
     font-size: 16px;
@@ -308,18 +275,10 @@ h2 {
     text-decoration: underline;
 }
 
-
-
-
 #emoji {
-
     width: 50px;
     transform: translateX(400px);
-
-
 }
-
-
 
 #hello {
     display: flex;
@@ -372,15 +331,10 @@ h2 {
     }
 }
 
-
-
 @media screen and (max-width: 768px) {
     #container {
         flex-direction: column;
     }
-
- 
-
 
     .project-container {
         gap: 20px;
@@ -389,14 +343,11 @@ h2 {
 
     .project img{
         width: -webkit-fill-available;
-
     }
-
 
     .project {
         width: 80vw;
         margin: 0px;
-        
         gap: 10px;
     }
 
@@ -406,14 +357,10 @@ h2 {
         height: auto;
         width: 100vw;
         align-items: center;
-        
-
     }
 
-    
     .test {
         width: 100%;
-        
     }
 
     .test p, #typewriter, #cursor  {
@@ -422,7 +369,6 @@ h2 {
     
     #emoji {
         width: 35px;
-        
     }
 
     #portrait {
@@ -430,46 +376,27 @@ h2 {
     }
 
     nav ul {
-       
         justify-content: space-around;
         text-align: center;
-       
         gap: 2px;
-        
-
     }
     nav ul li {
        text-align: center;
        width: 25vw;
-       
-
     }
 
     nav ul li a {
         font-size: 12px;
-        
         text-align: center;
     }
 
-
     .soft-container{
         flex-direction: column;
-
         gap: 30px;
-        
     }
     .soft-subcontainer{
         width: 70vw;
-
-        
-    
     }
-
-
-
-
-
-
 }
 
 .side {
@@ -480,13 +407,11 @@ h2 {
     width: 90%;
 }
 
-
 .centrons {
     margin: 0px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 

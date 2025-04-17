@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
-@import url('../../node_modules/@radix-ui/colors/violet.css');
-@import url('../../node_modules/@radix-ui/colors/violet-dark.css');
-@import url('../../node_modules/@radix-ui/colors/gray.css');
-@import url('../../node_modules/@radix-ui/colors/gray-dark.css');
+
+/* Définition des variables de couleur pour remplacer Radix UI */
+:root {
+  --violet-1: #fdfcfe;
+  --violet-3: #f5f2ff;
+  --violet-4: #ede9fe;
+  --violet-7: #8b5cf6;
+  --violet-8: #7c3aed;
+  --violet-9: #6d28d9;
+  --violet-11: #5b21b6;
+  --violet-12: #4c1d95;
+  
+  --gray-11: #383838;
+  --gray-12: #212121;
+}
 
 * {
     padding: 0;
